@@ -1,0 +1,10 @@
+name: FlowyTestPlugin
+main: delion\FlowyTest\Main
+version: 0.1.0
+api: [3.12.0]
+load: POSTWORLD
+author: WhiteGrouse
+
+virions:
+  - Flowy
+  - Standard
