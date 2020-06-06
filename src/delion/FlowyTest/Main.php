@@ -1,6 +1,8 @@
 <?php
 namespace delion\FlowyTest;
 
+use pocketmine\event\player\{PlayerJoinEvent, PlayerJumpEvent, PlayerQuitEvent};
+use pocketmine\math\Vector3;
 use pocketmine\plugin\PluginBase;
 use flowy\Flowy;
 use flowy\standard\Standard;
@@ -34,7 +36,7 @@ class Main extends PluginBase {
           $event = yield listen(PlayerJumpEvent::class);
           yield from delay($this->getScheduler(), 20 * 3);
           $player->sendMessage("rejump!!");
-          $player->jump();
+          $player->setMotion(new Vector3(0, 1, 0));
         });
       }
     });
