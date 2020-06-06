@@ -6,6 +6,6 @@ projects:
   TestPlugin:
     path: ""
     libs:
-    - src: FlowyProject/flowy/Flowy
-    - src: flowy/standard/Standard
+    - src: FlowyProject/Flowy/Flowy
+    - src: FlowyProject/Flowy/Standard
 ...
