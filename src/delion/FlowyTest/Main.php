@@ -16,7 +16,7 @@ class Main extends PluginBase {
 
     $stream = start($this);
     $stream->run(function($stream) {
-      $this->getLogger()->info("sleeping...");
+      $this->getLogger()->info("Sleeping...");
       yield from delay($this->getScheduler(), 20 * 10);
       $this->getLogger()->info("Hello!!");
 
